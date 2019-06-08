@@ -102,7 +102,7 @@ namespace PaparaMVCExample.Controllers
          * CreatePaymentObject Ödeme nesnesi oluşturmak için kullanılır.
          * Papara sunucularında yeni bir payment oluşturur ve geri döndürür.
          * Her sepet sonucuna gidildiğinde oluşturulmalıdır. /Home/Checkout/ sayfası gibi. 
-         * Bir Payment Get nesnesi döndürür
+         * Bir PaymentGet nesnesi döndürür
          * 
          */
         public static PaymentGet CreatePaymentObject(Payment payment)
@@ -166,7 +166,7 @@ namespace PaparaMVCExample.Controllers
          * GetPaymentObject, Ödeme nesnesi getirmek için kullanılır. 
          * Papara sunucularından id (ödeme numarası) parametresiyle istenerek getirilir.
          * Bir PaymentGet nesnesi döndürür. 
-         * İçerisinde ödeme verisi, başarı durumu ve var ise hata açıklaması bulunur.
+         * İçerisinde ödeme verisi, başarı durumu ve hata açıklaması bulunur.
         */
         public static PaymentGet GetPaymentObject(string id)
         {
